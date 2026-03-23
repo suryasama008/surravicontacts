@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; overflow: hidden; }
+
+@layer components {
+  .btn { @apply px-3 py-1.5 text-sm border border-gray-200 rounded-lg cursor-pointer bg-white hover:bg-gray-50 transition-colors; }
+  .btn-primary { @apply px-3 py-1.5 text-sm bg-brand text-white rounded-lg cursor-pointer hover:bg-brand-dark transition-colors border-0; }
+  .btn-danger { @apply px-3 py-1.5 text-sm border border-red-200 text-red-600 rounded-lg cursor-pointer hover:bg-red-50 transition-colors; }
+  .input { @apply w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:border-brand bg-white; }
+  .label { @apply block text-xs text-gray-500 uppercase tracking-wide mb-1; }
+}
